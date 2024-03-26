@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link';
 
 const IssuesPage = () => {
     return (
-        <div>IssuesPage</div>
+        <div>
+            <Link href="/issues/new" className="btn btn-primary">New Issue</Link>
+        </div>
     )
 }
 
