@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import React from 'react';
-import { AiFillBug } from 'react-icons/ai';
+import { GiAlienBug } from 'react-icons/gi';
 import { usePathname } from 'next/navigation';
 import classnames from "classnames";
 
@@ -14,7 +14,7 @@ const NavBar = () => {
     
     return (
         <nav className="flex space-x-6 border-b mb-5 px-5 py-5 items-center">
-        <Link href="/"><AiFillBug /></Link>
+        <Link href="/"><GiAlienBug size='2em' /></Link>
         <ul className="flex space-x-6">
             { links.map(link =>
             <li key={link.href}>
